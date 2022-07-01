@@ -20,6 +20,10 @@ int main(void)
 		putchar(i);
 		i++;
 	}
+	while (j < 91)
+	{
+		putchar(i)
+			j++;
 	putchar(10);
 	return (0);
 }
