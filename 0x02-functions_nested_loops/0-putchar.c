@@ -1,4 +1,3 @@
-#include <hoberton.h>
 #include "main.h"
 
 /**
