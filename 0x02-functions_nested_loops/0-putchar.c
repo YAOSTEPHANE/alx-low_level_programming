@@ -1,22 +1,13 @@
-#include <stdio.h>
-#include "main.h" 
+#include <unistd.h>
+
 /**
- * main - prints Holberton
+ * _putchar - prints _putchar
+ * Description: Write a program that prints _putchar, followed by a new line.
  *
- * Description: prints Holberton
- *
- * Return: Alway 0 (Success)
+ * Return: on success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int main(void)
+int _putchar(char c)
 {
-	char text[10] = "Holberton";
-
-	int i = 0;
-
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(text[i]);
-	}
-	_putchar('\n');
-	return (0);
+	return (write(1, &c, 1));
 }
