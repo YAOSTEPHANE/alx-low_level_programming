@@ -1,12 +1,18 @@
 #include "main"
 
 /**
- * add - sums up two numbers
- * @n:first integer
- * @m:second integer
- * Return: returns 0
+ * add - adds two integers
+ * @n1: integer 1
+ * @n2: integer 2
+ *
+ * Description: give two integers, returns sum
+ * Return: sum
  */
-int add(int n, int m)
+int add(int n1, int n2)
 {
-	return (n + m);
+	int sum;
+
+	sum = n1 + n2;
+
+	return (sum);
 }
