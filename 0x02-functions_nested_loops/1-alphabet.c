@@ -1,5 +1,4 @@
-#include "main.c"
-#include <main.h> 
+#include <hoberton.h>
 
 /**
  * main - check the code
