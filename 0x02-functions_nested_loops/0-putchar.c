@@ -1,13 +1,13 @@
-#include <main.h>
+#include <hoberton.h>
 
 /**
- * main-prints main.h
+ * main-prints Holberton
  * Description: prints main
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char text[10] = "main";
+	char text[10] = "Holberton";
 	int i = 0;
 
 	for (i = 0; i < 9; i++)
