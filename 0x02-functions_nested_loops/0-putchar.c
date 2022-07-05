@@ -3,6 +3,7 @@
 /**
  * main-"The program prints _putchar followed by a new line"
  * File: "0-putchar.c"
+ * file: "main.h"
  * Return: Always 0
  */
 int main(void)
