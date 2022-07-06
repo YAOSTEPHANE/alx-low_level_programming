@@ -2,33 +2,43 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints al natural numbers to 98
- * @n: The character to print
+ * print_times_table - prints the  times table with
+ * parameter
+ * @n: parameter
+ * Return: returns nothing
  *
  */
-void print_to_98(int n)
+void print_times_table(int n)
 {
-	int a;
+	int digit, mult, result;
 
-	if (n < 98)
+	if (n <= 15 && n >= 0)
 	{
-		for (a = n; a < 98; a++)
+		for (digit = 0; digit <= n; digit++)
 		{
-			printf("%d, ", a);
+			_putchar('0');
+
+			for (mult = 1; mult <= n; mult++)
+			{
+				_putchar(',');
+				_putchar(' ');
+				result = digit * mult;
+				if (result <= 99)
+					_putchar(' ');
+
+				if (result <= 9)
+					_putchar(' ');
+				if (result >= 100)
+				{
+					_putchar((result / 100) + '0');
+					_putchar((result / 10) % 10 + '0');
+				}
+				else if (result <= 99 && result >= 10)
+				{
+					_putchar((result / 10) + '0');
+				}
+				_putchar('\n');
+			}
 		}
-		printf("98");
-		putchar('\n');
 	}
-	if (n > 98)
-	{
-		for (a = n; a > 98; a--)
-		{
-			printf("%d, ", a);
-		}
-		printf("98\n");
-	}
-	if (n == 98)
-	{
-	if (n == 98)
-	}
-}
+
