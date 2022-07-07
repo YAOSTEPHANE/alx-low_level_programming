@@ -1,20 +1,46 @@
-#include <math.h>
 #include "main.h"
-
 /**
- * power - exponents
- * @base: base
- * @exp: exponent
- * Return: result (int)
+ * print_number - print an int numbers.
+ * @n: number tested
+ * Return: Always 0.
  */
-
-int  power(int base, int exp)
+void print_number(int n)
 {
-	int i, num;
+	int i, j, digit, digits, power;
+	unsigned int temp, numchar, number;
 
-	num = 1;
-	for (i = 0; i < exp; ++i)
-		num *= base;
+	digit = 0;
+	if (n < 0)
+	{
+		_putchar('-');
+		temp = -n;
+	}
+	else
+	{
+		temp = n;
+	}
 
-	return (num);
+	number = temp;
+
+	while (number >= 10)
+	{
+		number = number / 10;
+		digit++;
+	}
+	digits = digit + 1;
+	power = 1;
+	i = 1;
+
+	while (i < digits)
+	{
+		power = power * 10;
+		i++;
+	}
+	j = power;
+	while (j >= 1)
+	{
+		numchar = (temp / j) % 10;
+		_putchar(numchar + '0');
+		j = j / 10;
+	}
 }
