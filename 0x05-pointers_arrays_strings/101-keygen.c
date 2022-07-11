@@ -1,27 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <time.h>
+
+/**
+ * main - generate random password for 101-crackme
+ * Return: 0
+ */
 
 int main(void)
 {
-	srand((unsigned int)(time(NULL)));
-	int i;
-	char pass[12];
+	int sum;
+	char c;
 
-	printf("Press enter to get a twelve-character password\n");
-	getchar();
-
-	for (i = 0; i < 4; i++)
+	srand(time(NULL));
+	while (sum <= 2645)
 	{
-		pass[i] = rand() % 9;
-		char capLetter = 'A' + (rand() % 26);
-
-		pass[i + 2] = capLetter;
-		char letter = 'a' + (rand() % 26);
-
-		pass[i + 3] = letter;
-		printf("%d%c%c", pass[i], pass[i + 2], pass[i + 3]);
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
 	}
-	printf("\n\n");
-}
+	putchar(2772 - sum);
+	return (0);
