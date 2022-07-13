@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/** dream doesn't become reality through magic; it takes sweat, determination and hard work
+ * main - become reality through magic; it takes sweat, determination and hard work
+ * Return: Always 0 (Success)
 int main(void)
 {
 	int n;
