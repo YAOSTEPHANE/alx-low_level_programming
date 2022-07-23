@@ -1,7 +1,6 @@
-#include "main.h"
-
-int main(void)
-{
-_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-return (0);
+#include <stdio.h>
+/** * main - main block * Return: 0 */
+int main(void) {
+    printf("with proper grammar, but the outcome is a piece of art,\n");
+    return (0);
 }
