@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *july;
+	char *aout;
 	int c, i, j, ia;
 
 	if (ac == 0)
@@ -26,9 +26,9 @@ char *argstostr(int ac, char **av)
 		c++;
 	}
 
-	july = malloc((c + 1) * sizeof(char));
+	aout = malloc((c + 1) * sizeof(char));
 
-	if (july == NULL)
+	if (aout == NULL)
 	{
 		free(aout);
 		return (NULL);
@@ -38,15 +38,15 @@ char *argstostr(int ac, char **av)
 	{
 		if (av[i][j] == '\0')
 		{
-			july[ia] = '\n';
+			aout[ia] = '\n';
 			i++;
 			ia++;
 			j = 0;
 		}
 		if (ia < c - 1)
-			july[ia] = av[i][j];
+			aout[ia] = av[i][j];
 	}
-	july[ia] = '\0';
+	aout[ia] = '\0';
 
-	return (july);
+	return (aout);
 }
