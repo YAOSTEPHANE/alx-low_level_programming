@@ -9,18 +9,18 @@
  * @argv: args
  * Return: int
  */
-int main(int som1, char *som2[])
+int main(int argc, char *argc[])
 {
 unsigned long mul;
 int i, j;
-	if (som1 != 3)
+	if (argc != 3)
 	{ printf("Error\n");
 	exit(98); }
-	for (i = 1; i < som1; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; som2[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (som2[i][j] > 57 || som[i][j] < 48)
+			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{  printf("Error\n");
 				exit(98); }
 		}
