@@ -9,7 +9,7 @@
  * @argv: args
  * Return: int
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 unsigned long mul;
 int i, j;
@@ -22,7 +22,7 @@ int i, j;
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{  printf("Error\n");
-				exit(98); }
+			exit(98); }
 		}
 
 	}
