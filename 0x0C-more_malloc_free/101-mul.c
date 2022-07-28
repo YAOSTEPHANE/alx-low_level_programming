@@ -30,17 +30,17 @@ while (str[i])
 int _atoi(const char *s)
 {
     int sign = 1;
-	unsigned long int resp = 0, firstNum, i;
+	unsigned long int resp = 0, Num1, i;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	for (Num1 = 0; !(s[Num1] >= 48 && s[Num1] <= 57); Num1++)
 	{
-		if (s[firstNum] == '-')
+		if (s[Num1] == '-')
 		{
 			sign *= -1;
 		}
 	}
 
-	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	for (i = Num1; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
 		resp += (s[i] - 48);
