@@ -29,7 +29,7 @@ while (str[i])
 
 int _atoi(const char *s)
 {
-    int sign = 1;
+	int sign = 1;
 	unsigned long int resp = 0, Num1, i;
 
 	for (Num1 = 0; !(s[Num1] >= 48 && s[Num1] <= 57); Num1++)
